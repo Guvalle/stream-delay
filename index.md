@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+# stream-delay
+stream-delay, also known as stream-focus is an application developed to allow streammers to broadcast their content with delay while being able to interact with the audience in real time.
 
-You can use the [editor on GitHub](https://github.com/Guvalle/stream-delay/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+What it does is simply capture frames from the current active window and buffer them for the configured amount of time, and display the frame after that.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+To work with it it's very simple. You set your chosen streamming software to capture stream-delay instead of your application, and then let stream-delay be the one who captures frames from the application, and it'll work as a proxy for the capture while your camera and sound are broadcasted in realtime to your audience.
 
-### Markdown
+## Running it:
+stream-delay is coded in python and compiled using pyinstaller to create an executable file.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+You can either download the code and compile yourself or run the pre-compiled version contained inside de **dist** folder.
 
-```markdown
-Syntax highlighted code block
+## Settings:
+The settings file is called **config.txt** and is composed by 4 configurations:
+- SET MODE: 
+  - This tells the app where the frames will come from.
+  - The value can either be **"mode": 1** or **"mode": 2** with 1 being a full display capture and 2 being an active window capture
 
-# Header 1
-## Header 2
-### Header 3
+- SET WINDOW SIZE
+  - This tells the app the resolution of the output frames
+  - The value is set in two variables: **"window_width"** and **"window_height"**
 
-- Bulleted
-- List
+- SET FRAMES PER SECOND FOR RECORDING
+  - This tell the app how many frames it should capture per second. *PS: The computer performance may influence the workings of this option. The app will try to stay at the chosen value but he might dip a little during heavy workload so it's recommended to set up a value a little higher than expected.*
+  - The value is set in the variable **"fps"**
 
-1. Numbered
-2. List
+- SET DELAY IN SECONDS
+  - This tells the app how long it should buffer the captured frames.
+  - The value is set in the variable **"delay"**
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Guvalle/stream-delay/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Improvements
+*The code is available to download and use as desired as long as the goal isn't comercial. If you make any improvements on the existing code please push it to this original project so it get's even better for future users* :D
