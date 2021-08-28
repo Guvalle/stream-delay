@@ -1,5 +1,5 @@
 # stream-delay
-stream-delay is an application developed to allow streammers to broadcast their content with delay while being able to interact with the audience in real time.
+stream-delay, also known as stream-focus is an application developed to allow streammers to broadcast their content with delay while being able to interact with the audience in real time.
 
 What it does is simply capture frames from the current active window and buffer them for the configured amount of time, and display the frame after that.
 
