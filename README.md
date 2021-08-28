@@ -30,3 +30,6 @@ The settings file is called **config.txt** and is composed by 4 configurations:
 
 ## Improvements
 *The code is available to download and use as desired as long as the goal isn't comercial. If you make any improvements on the existing code please push it to this original project so it get's even better for future users* :D
+
+## Project page
+https://guvalle.github.io/stream-delay/
