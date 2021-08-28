@@ -1,0 +1,16 @@
+{
+    #SET MODE
+    #1- Full window
+    #2- Active window
+    "mode": 1,
+
+    #SET WINDOW SIZE
+    "window_width": 2048, 
+    "window_height": 864,
+
+    #SET FRAMES PER SECOND FOR RECORDING
+    "fps": 60,
+
+    #SET DELAY IN SECONDS
+    "delay": 20,
+}
